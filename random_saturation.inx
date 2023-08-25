@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Random Saturation Change</name>
+  <id>org.inkscape.tutorial.random_saturation_change_extension</id>
+  <param name="howMany" type="int" min="1" max="1000" _gui-text="Number of objects to affect:">1</param>
+  <param name="saturation" type="float" min="-100" max="100" _gui-text="Saturation level change (%):">0</param>
+  <effect>
+    <effects-menu>
+      <submenu name="Selection"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">random_saturation.py</command>
+  </script>
+</inkscape-extension>

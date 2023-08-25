@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Assign Colors to Triangles</name>
+  <id>org.inkscape.tutorial.assign_colors_to_triangles</id>
+  <param name="threshold" type="float" min="0" max="10000" _gui-text="X-coordinate for color 2:">200</param>
+  <param name="color1" type="string" _gui-text="Starting Color (hex):">#0000FF</param>
+  <param name="color2" type="string" _gui-text="Ending Color (hex):">#FF0000</param>
+  <effect>
+    <effects-menu>
+      <submenu name="Selection"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">assign_colors.py</command>
+  </script>
+</inkscape-extension>

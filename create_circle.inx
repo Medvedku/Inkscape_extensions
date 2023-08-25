@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Create Random Circles</name>
+  <id>org.inkscape.tutorial.create_random_circles_extension</id>
+  <param name="width" type="float" min="1" max="10000" _gui-text="Width of the circle:">100</param>
+  <param name="height" type="float" min="1" max="10000" _gui-text="Height of the circle:">100</param>
+  <param name="number" type="int" min="1" max="1000" _gui-text="Number of circles to create:">1</param>
+  <param name="boundary_width" type="float" min="1" max="10000" _gui-text="Boundary width (mm):" />
+  <param name="boundary_height" type="float" min="1" max="10000" _gui-text="Boundary height (mm):" />
+  <effect>
+    <effects-menu>
+      <submenu name="Create"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">create_circle.py</command>
+  </script>
+</inkscape-extension>
