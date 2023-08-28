@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Change Lightness of Fill Color</name>
+  <id>org.inkscape.tutorial.change_lightness</id>
+  <param name="lightness" type="float" min="-100" max="100" _gui-text="Lightness change (%):">0</param>
+  <effect>
+    <effects-menu>
+      <submenu name="Selection"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">change_lightness.py</command>
+  </script>
+</inkscape-extension>
